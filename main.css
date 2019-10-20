@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background: url('./bg.svg') no-repeat;
+    background-size: cover;
+}
+
+nav {
+    padding: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #000000;
+    margin: 0 30px;
+}
+
+#logo {
+    font-size: 2em;
+}
+
+.container {
+    padding-top: 5%;
+    text-align: center;
+    width: 60%;
+    margin: 110px auto;
+}
+
+.container h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.container p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+nav ul li a:hover {
+    color: skyblue;
+}
+
+.sectionContainer {
+    display: grid;
+    text-align: center;
+    grid-template: 1fr / repeat(3, 1fr);
+}
+
+.sectionContainer section p {
+    padding: 0px 50px 0px 50px;
+}
+
+.sectionContainer div h1{
+    color: purple;
+}
+
+.btn {
+    font-size: 1.3em;
+    border: solid 3px white;
+    border-radius: 0.3em;
+    padding: 5px 10px 5px 10px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: skyblue;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
