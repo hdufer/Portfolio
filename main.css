@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    background: url('./bg.svg') no-repeat;
+    background: url('./img/bg.svg') no-repeat;
     background-size: cover;
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 .btn:hover{
     background-color: white;
-    color: skyblue;
+    color: lightblue;
 }
 
 .btn span {
@@ -110,4 +110,36 @@ nav ul li a:hover {
 .btn:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.aboutMeContainer {
+    padding-top: 10%;
+    display: grid;
+    grid-template:  1fr / repeat(6, 1fr);
+    grid-template-areas: ". a a a a .";
+    text-align: center;
+}
+
+.aboutMeContainer div {
+    grid-area: a;
+    background-color: white;
+    border-radius: 0.3em;
+    color: skyblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutMeContainer div p{
+    text-align: start;
+    padding-left: 10%;
+    width: 50%;
+}
+
+.aboutMeSection1 p {
+    display: inline;
+    float: left;
+}
+
+.vigi {
+    width: 25%;
+    border-radius: 0.3em;
 }
