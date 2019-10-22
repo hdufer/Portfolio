@@ -143,6 +143,7 @@ nav ul li a:hover {
 #aboutMeTitle {
     background: -webkit-linear-gradient(60deg,#4efff6, #5297ff);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
