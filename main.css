@@ -31,6 +31,7 @@ nav ul li {
 nav ul li a {
     color: #000000;
     margin: 0 30px;
+    cursor: pointer;
 }
 
 #logo {
@@ -112,7 +113,7 @@ nav ul li a:hover {
     right: 0;
 }
 
-.aboutMeContainer {
+.gridCenteredContainer {
     padding-top: 10%;
     display: grid;
     grid-template:  1fr / repeat(6, 1fr);
@@ -120,26 +121,31 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.aboutMeContainer div {
+.centeredContainer {
     grid-area: a;
     background-color: white;
     border-radius: 0.3em;
-    color: skyblue;
+    color: gray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.aboutMeContainer div p{
+.centeredContainer p{
     text-align: start;
-    padding-left: 10%;
+    padding-left: 5%;
     width: 50%;
 }
 
-.aboutMeSection1 p {
+.aboutMeSection p {
     display: inline;
     float: left;
 }
 
-.vigi {
-    width: 25%;
+#aboutMeTitle {
+    background: -webkit-linear-gradient(60deg,#4efff6, #5297ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gridCenteredContainer img {
     border-radius: 0.3em;
 }

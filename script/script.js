@@ -1,3 +1,9 @@
-let btn = document.getElementById('btn')
+let btn = document.getElementById("btn")
+let navLinkAboutMe = document.getElementById("aboutMeLink");
 
-btn.onclick = () => document.getElementById('aboutMeSection1').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+function scrollToAboutMeSection() {
+    document.getElementById('aboutMeSection').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
+
+btn.onclick = () => scrollToAboutMeSection();
+navLinkAboutMe.onclick = () => scrollToAboutMeSection();
