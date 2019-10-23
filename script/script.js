@@ -49,7 +49,7 @@ let h = document.documentElement,
     sh = 'scrollHeight';
 
 // Interact with this table if u want to add more skillBar, before add canvas element in the DOM because it iterate through it
-let circleArray = [["white", "red", 0.75],["white", "#fcdb03", 0.80],["white", "skyblue", 0.8],["white", "lightgreen", 0.7],["white", "purple", 0.9]]
+let circleArray = [["white", "red", 0.75],["white", "#fcdb03", 0.80],["white", "skyblue", 0.8],["white", "#00c714", 0.7],["white", "purple", 0.9]]
 
 // If page reload on right percentage to drawCircle
 let percentScroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
