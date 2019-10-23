@@ -187,7 +187,7 @@ nav ul li a:hover {
 }
 
 #contactMail {
-    background-image: -webkit-linear-gradient(60deg, #2686f3, #4632ff);
+    background-image: -webkit-linear-gradient(60deg, #2686f3, #286cff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
