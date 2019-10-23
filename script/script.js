@@ -4,7 +4,7 @@ let btn = document.getElementById("btn")
 let navLinkAboutMe = document.getElementById("aboutMeLink");
 
 function scrollToAboutMeSection() {
-    document.getElementById('aboutMeSection').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    document.getElementById('aboutMeTitle').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
 btn.onclick = () => scrollToAboutMeSection();
@@ -53,7 +53,7 @@ let circleArray = [["white", "red", 0.75],["white", "#fcdb03", 0.80],["white", "
 
 // If page reload on right percentage to drawCircle
 let percentScroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-if (percentScroll >= 90)
+if (percentScroll >= 50)
 {
     for(let i = 0; i < circleArray.length; i++)
     {
@@ -67,7 +67,7 @@ let launchAnim = false;
 // Event for the percentage to drawCircle
 document.body.onscroll = () => {
     percentScroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-    if (percentScroll >= 90 && launchAnim == false)
+    if (percentScroll >= 50 && launchAnim == false)
     {
         launchAnim = true;
         for(let i = 0; i < circleArray.length; i++)

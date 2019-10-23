@@ -136,11 +136,10 @@ nav ul li a:hover {
 }
 
 .aboutMeSection p {
-    display: inline;
     float: left;
 }
 
-#aboutMeTitle, #skillsTitle {
+#aboutMeTitle, #skillsTitle, #achievementsTitle {
     background: -webkit-linear-gradient(60deg,#4efff6, #5297ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -155,3 +154,56 @@ nav ul li a:hover {
     display: grid;
     grid-template: 1fr/ repeat(5,1fr);
 }
+
+#achievementsSection {
+    display: grid;
+    grid-template: 1fr / repeat(2,1fr);
+}
+
+#vigiprojectText {
+    width: 90%;
+    padding-right: 10px;
+}
+
+#vigiprojectImg {
+    padding-left: 10%;
+    width: 500px;
+}
+
+#downloadCvContainer {
+    display: inline-block;
+    padding-left: 35%;
+}
+
+#cvDownload {
+    padding: 10px;
+    color: skyblue;
+    background-image: -webkit-linear-gradient(60deg, #26f3d8, #4632ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-animation: hueTextGradient 10s infinite linear;
+    animation: hueTextGradient 10s infinite linear;
+}
+
+#contactMail {
+    background-image: -webkit-linear-gradient(60deg, #2686f3, #4632ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+footer {
+    height: 100px;
+}
+
+@keyframes hueTextGradient {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+  
