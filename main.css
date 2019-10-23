@@ -140,7 +140,7 @@ nav ul li a:hover {
     float: left;
 }
 
-#aboutMeTitle {
+#aboutMeTitle, #skillsTitle {
     background: -webkit-linear-gradient(60deg,#4efff6, #5297ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -151,7 +151,7 @@ nav ul li a:hover {
     border-radius: 0.3em;
 }
 
-.cSkill {
-    display: inline-block;
-    float: left;
+.skillsSection {
+    display: grid;
+    grid-template: 1fr/ repeat(5,1fr);
 }
