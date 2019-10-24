@@ -1,14 +1,16 @@
 // Simple scrolling when clicking aboutMe Navbar or Learn More call to Action
 
-let btn = document.getElementById("btn")
+let btn = document.getElementById("btn");
 let navLinkAboutMe = document.getElementById("aboutMeLink");
+let navLinkSkills = document.getElementById("skillsLink");
 
-function scrollToAboutMeSection() {
-    document.getElementById('aboutMeTitle').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+function scrollTo(idElementToScroll) {
+    document.getElementById(idElementToScroll).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
-btn.onclick = () => scrollToAboutMeSection();
-navLinkAboutMe.onclick = () => scrollToAboutMeSection();
+btn.onclick = () => scrollTo('aboutMeTitle');
+navLinkAboutMe.onclick = () => scrollTo('aboutMeTitle');
+navLinkSkills.onclick = () => scrollTo('skillsTitle');
 
 // Canvas animation for Skills section
 
