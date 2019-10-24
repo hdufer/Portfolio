@@ -28,7 +28,7 @@ function drawCircle(fillColor, strokeColor, percentage, idCanvas) {
     ctx.lineWidth = 5;
 
     if (state < percentage * 1.5)
-        state += 0.01;
+        state += 0.005;
     else
         return;
 

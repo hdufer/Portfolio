@@ -220,3 +220,9 @@ footer {
     }
   }
   
+  @media (max-width: 1000px) {
+    .gridCenteredContainer {
+        grid-template:  1fr / repeat(auto-fit, minmax(100px, 1fr));
+        /* background-color: whitesmoke; */
+    }
+  }
