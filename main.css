@@ -194,8 +194,21 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+#contactMailContainer {
+    padding-bottom: 1%;
+}
+
 footer {
     height: 100px;
+    background-image: -webkit-linear-gradient(60deg, #26a1f3, #286cff);
+    position: relative;
+    z-index: -1;
+    bottom: 5%;
+    text-align: center;
+}
+
+#copyright {
+    padding-top: 4em;
 }
 
 @keyframes hueTextGradient {
