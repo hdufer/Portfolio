@@ -152,7 +152,7 @@ nav ul li a:hover {
 
 .skillsSection {
     display: grid;
-    grid-template: 1fr/ repeat(5,1fr);
+    grid-template: 1fr/ repeat(6,1fr);
 }
 
 #achievementsSection {
